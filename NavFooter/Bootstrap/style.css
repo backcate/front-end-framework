@@ -1,0 +1,76 @@
+.nav-bg {
+    background-color: #003152;
+}
+.footer-bg {
+    background-color: #003152;
+}
+
+.midea  {
+    font-size: 35px;
+    color: white;
+}
+.email {
+    border: none;
+    outline: none;
+}
+.hr-line {
+    color: rgb(255, 255, 255);
+}
+.copy-right, .time {
+    font-size: 14px;
+    color: white;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.menu-btn {
+    color: white;
+    font-size: 26px;
+}
+
+/* ===================== */
+.sm-text-color {
+    color: white;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    font-size: 18px;
+}
+.sm-text-color:hover {
+    color: #0099ff;
+}
+.bottom-line {
+    position: relative;
+}
+.bottom-line::before {
+    position: absolute;
+    content: '';
+    background-color: red;
+    width: 0%;
+    height: 2px;
+    bottom: 10px;
+    left: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.bottom-line:hover::before {
+    width: 100%;
+}
+
+/* SM */
+@media (max-width: 575px) {}
+
+/* MD */
+@media (max-width: 767px) {}
+
+/* LG */
+@media (max-width: 991px) {
+    .sm-text-color {
+        color: black;
+    }
+}

@@ -1,0 +1,39 @@
+/* 2XL */
+@media (max-width: 1535px) {
+    .container {
+        width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+/* XL */
+@media (max-width: 1279px) {
+    .container {
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+/* LG */
+@media (max-width: 1023px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+
+/* MD */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* SM */
+@media (max-width: 639px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

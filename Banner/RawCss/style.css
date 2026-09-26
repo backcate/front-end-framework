@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+}
+.container {
+    width: 1268px;
+    margin: 0 auto;
+}
+.btn {
+    background-color: inherit;
+    border: inherit;
+}
+/* ------ banner ------- */
+.banner {
+    background-image: linear-gradient(
+        to right,
+        white 0%,
+        white 50%,
+        transparent 100%
+    ), url(./2015-Image-Awards-West-Gallery-224-a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+}
+.banner h1 {
+    color: #003152;
+    font-size: 56px;
+    font-weight: 800;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.banner p {
+    color: #003152;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 600px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+}
+.hero-btn button {
+    color: white;
+    padding: 11px 30px;
+    background-color: #003152;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: 2px solid #003152;
+    transition: all linear .2s;
+}
+.hero-btn button:hover {
+    color: #003152;
+    background-color: white;
+    border: 2px solid #003152;
+}
