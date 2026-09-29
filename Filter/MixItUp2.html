@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="src/output.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ================ Navbar ================ -->
+    <nav class="bg-pink-950 sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div class="flex items-center">
+                    <a href="#" class="text-3xl font-bold text-white">BACK|cate</a>
+                </div>
+                <div class="">
+                    <button class="flex md:hidden text-white text-2xl my-5 cursor-pointer"><i class="fa-solid fa-bars"></i></button>
+                    <!-- <div class="absolute w-full h-screen bg-pink-950/50 top-0 left-0 block md:hidden"></div> -->
+                    <div class="absolute md:static bg-white md:bg-transparent w-75 md:w-fit h-screen md:h-fit top-0 right-0 p-5 md:p-0 border-l md:border-0 border-l-pink-950/10 shadow-xl md:shadow-none hidden md:block">
+                        <div class="block md:hidden">
+                            <button class="text-xl cursor-pointer text-pink-800"><i class="fa-solid fa-xmark"></i></button>
+                            <hr class="bg-pink-500/50 h-px w-full mt-5">
+                        </div>
+                        <ul class="flex flex-col md:flex-row justify-between gap-0 md:gap-3.5 mt-5 md:mt-0">
+                            <li class="py-2.5 md:py-5"><a href="#" class="text-lg text-black md:text-white capitalize py-2.5 px-2.5">home</a></li>
+                            <li class="py-2.5 md:py-5"><a href="#" class="text-lg text-black md:text-white capitalize py-2.5 px-2.5">about</a></li>
+                            <li class="py-2.5 md:py-5"><a href="#" class="text-lg text-black md:text-white capitalize py-2.5 px-2.5">page</a></li>
+                            <li class="py-2.5 md:py-5"><a href="#" class="text-lg text-black md:text-white capitalize py-2.5 px-2.5">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================ Main ================ -->
+    <main>
+        <section class="py-14">
+            <div class="mx-auto container">
+                <div class="flex flex-wrap gap-3 mb-7.5">
+                    <button type="button" class="btn" data-filter="all">all categories</button>
+                    <button type="button" class="btn" data-filter=".officialRecords">official records</button>
+                    <button type="button" class="btn" data-filter=".lettersMemoirs">letters & memoirs</button>
+                    <button type="button" class="btn" data-filter=".publications">publications</button>
+                </div>
+                <div class="menu-item grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="mix officialRecords" data-order="1">
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure>
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-amber-300">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                <div class="card-actions justify-end mt-3 items-center">
+                                    <button class="btn text-amber-300 bg-pink-950" onclick="zoom_1.showModal()">Zoom</button>
+                                    <dialog id="zoom_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                    <button class="capitalize text-pink-950 text-sm cursor-pointer ms-5" onclick="info_1.showModal()">more info <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <dialog id="info_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix lettersMemoirs" data-order="2">
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure>
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-amber-300">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                <div class="card-actions justify-end mt-3 items-center">
+                                    <button class="btn text-amber-300 bg-pink-950" onclick="zoom_1.showModal()">Zoom</button>
+                                    <dialog id="zoom_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                    <button class="capitalize text-pink-950 text-sm cursor-pointer ms-5" onclick="info_1.showModal()">more info <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <dialog id="info_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix publications" data-order="3">
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure>
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-amber-300">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                <div class="card-actions justify-end mt-3 items-center">
+                                    <button class="btn text-amber-300 bg-pink-950" onclick="zoom_1.showModal()">Zoom</button>
+                                    <dialog id="zoom_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                    <button class="capitalize text-pink-950 text-sm cursor-pointer ms-5" onclick="info_1.showModal()">more info <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <dialog id="info_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix officialRecords" data-order="1">
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure>
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-amber-300">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                <div class="card-actions justify-end mt-3 items-center">
+                                    <button class="btn text-amber-300 bg-pink-950" onclick="zoom_1.showModal()">Zoom</button>
+                                    <dialog id="zoom_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                    <button class="capitalize text-pink-950 text-sm cursor-pointer ms-5" onclick="info_1.showModal()">more info <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <dialog id="info_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix lettersMemoirs" data-order="2">
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure>
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-amber-300">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                <div class="card-actions justify-end mt-3 items-center">
+                                    <button class="btn text-amber-300 bg-pink-950" onclick="zoom_1.showModal()">Zoom</button>
+                                    <dialog id="zoom_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                    <button class="capitalize text-pink-950 text-sm cursor-pointer ms-5" onclick="info_1.showModal()">more info <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <dialog id="info_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix publications" data-order="3">
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure>
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-amber-300">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                <div class="card-actions justify-end mt-3 items-center">
+                                    <button class="btn text-amber-300 bg-pink-950" onclick="zoom_1.showModal()">Zoom</button>
+                                    <dialog id="zoom_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                    <button class="capitalize text-pink-950 text-sm cursor-pointer ms-5" onclick="info_1.showModal()">more info <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <dialog id="info_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix officialRecords" data-order="1">
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure>
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-amber-300">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                <div class="card-actions justify-end mt-3 items-center">
+                                    <button class="btn text-amber-300 bg-pink-950" onclick="zoom_1.showModal()">Zoom</button>
+                                    <dialog id="zoom_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                    <button class="capitalize text-pink-950 text-sm cursor-pointer ms-5" onclick="info_1.showModal()">more info <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <dialog id="info_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix lettersMemoirs" data-order="2">
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure>
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-amber-300">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                <div class="card-actions justify-end mt-3 items-center">
+                                    <button class="btn text-amber-300 bg-pink-950" onclick="zoom_1.showModal()">Zoom</button>
+                                    <dialog id="zoom_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                    <button class="capitalize text-pink-950 text-sm cursor-pointer ms-5" onclick="info_1.showModal()">more info <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <dialog id="info_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix publications" data-order="3">
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure>
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-amber-300">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                <div class="card-actions justify-end mt-3 items-center">
+                                    <button class="btn text-amber-300 bg-pink-950" onclick="zoom_1.showModal()">Zoom</button>
+                                    <dialog id="zoom_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                    <button class="capitalize text-pink-950 text-sm cursor-pointer ms-5" onclick="info_1.showModal()">more info <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <dialog id="info_1" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                                            </form>
+                                            <h3 class="text-lg font-bold text-amber-300">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================ footer ================ -->
+    <footer class="bg-pink-950 py-10">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+                <div class="grid justify-center sm:justify-start mb-5">
+                    <a href="#" class="text-3xl font-bold text-white text-center sm:text-start">BACK|cate</a>
+                    <p class="text-sm text-white mt-2 mb-4 text-center sm:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul class="flex gap-6 text-lg text-white justify-center sm:justify-start">
+                        <li class=""><a href="#" class="capitalize">Link 1</a></li>
+                        <li class=""><a href="#" class="capitalize">Link 2</a></li>
+                        <li class=""><a href="#" class="capitalize">Link 3</a></li>
+                        <li class=""><a href="#" class="capitalize">Link 4</a></li>
+                    </ul>
+                    <div class="mt-1.5 flex gap-2 justify-center sm:justify-start">
+                        <a href="#" class="text-4xl text-white"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="text-4xl text-white"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="text-4xl text-white"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#" class="text-4xl text-white"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="grid justify-center sm:justify-end">
+                    <ul class="flex gap-6 text-lg text-white mb-2.5">
+                        <li class=""><a href="#" class="capitalize">home</a></li>
+                        <li class=""><a href="#" class="capitalize">about</a></li>
+                        <li class=""><a href="#" class="capitalize">page</a></li>
+                        <li class=""><a href="#" class="capitalize">contact</a></li>
+                    </ul>
+                    <form action="">
+                        <input type="email" placeholder="Enter Email" class="bg-white w-full p-2.5 mb-2 outline-0">
+                        <div class="">
+                            <button class="text-lg text-pink-950 bg-white capitalize font-bold w-full p-2 cursor-pointer">send <i class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4 text-white/50">
+            <div class="pt-3 text-white text-sm flex flex-col sm:flex-row justify-center">
+                <span class="me-2 justify-center flex">© 2026 ... . All rights reserved <span class="hidden sm:block ml-1.5">|</span></span>
+                <div>
+                    <span id="time" class="time text-center block"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="mixitup.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
