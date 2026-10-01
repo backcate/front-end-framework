@@ -15,56 +15,40 @@
 </head>
 <body>
     <!-- ================ Navbar ================ -->
-    <nav class="bg-teal-900 relative">
+    <nav class="bg-pink-950 sticky top-0 z-50">
         <div class="container mx-auto">
             <div class="flex justify-between">
-                <a href="index.html" class="flex items-center">
-                    <img src="logo-1.png" alt="logo" class="bg-amber-400 rounded-full w-15">
-                    <!-- <h1 class="text-amber-300 font-Italianno text-5xl">Green Plants</h1> -->
-                </a>
-                <div class="p-7 hidden lg:block">
-                    <ul class="flex gap-3 text-lg capitalize font-bold">
-                        <li><a href="index.html" class="relative text-white hover:text-amber-400 py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">home</span></a></li>
-                        <li><a href="product.html" class="relative text-white hover:text-amber-400 py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">product</span></a></li>
-                        <li><a href="about.html" class="relative text-white hover:text-amber-400 py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">about</span></a></li>
-                        <li><a href="contact.html" class="relative text-white hover:text-amber-400 py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">contact</span></a></li>
-                    </ul>
+                <div class="flex items-center">
+                    <a href="#" class="text-3xl font-bold text-white">BACK|cate</a>
                 </div>
-                <div class="flex items-center gap-8 text-2xl">
-                    <button class="text-white hover:text-amber-400 transition cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></button>
-                    <button class="text-white block lg:hidden cursor-pointer"><i class="fa-solid fa-bars"></i></i></button>
-                    <div class="block sm:hidden">
-                        <div class="absolute w-screen h-screen bg-amber-400/30 z-10 top-0 left-0"></div>
-                        <div class="absolute bg-teal-900 w-75 h-screen top-0 right-0 z-20">
-                            <div class="flex justify-between p-5">
-                                <button class="cursor-pointer text-white hover:text-amber-400 transition"><i class="fa-solid fa-xmark"></i></button>
-                                <a href="index.html" class="flex items-center">
-                                    <img src="logo-1.png" alt="logo" class="w-12 bg-amber-400 rounded-full">
-                                    <!-- <h1 class="text-text-light font-Italianno text-3xl">Green Plants</h1> -->
-                                </a>
-                            </div>
-                            <hr class="text-white/30 h-0.5 mx-2.5">
-                            <ul class="flex flex-col mt-10 text-lg capitalize font-bold">
-                                <li class="w-full h-12 flex justify-center items-center"><a href="index.html" class="relative text-white hover:text-amber-400 transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-white before:bottom-0 before:left-0">home</a></li>
-                                <li class="w-full h-12 flex justify-center items-center"><a href="product.html" class="relative text-white hover:text-amber-400 transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-white before:bottom-0 before:left-0">product</a></li>
-                                <li class="w-full h-12 flex justify-center items-center"><a href="about.html" class="relative text-white hover:text-amber-400 transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-white before:bottom-0 before:left-0">about</a></li>
-                                <li class="w-full h-12 flex justify-center items-center"><a href="contact.html" class="relative text-white hover:text-amber-400 transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-white before:bottom-0 before:left-0">contact</a></li>
-                            </ul>
+                <div class="">
+                    <button class="flex md:hidden text-white text-2xl my-5 cursor-pointer"><i class="fa-solid fa-bars"></i></button>
+                    <!-- <div class="absolute w-full h-screen bg-pink-950/50 top-0 left-0 block md:hidden"></div> -->
+                    <div class="absolute md:static bg-white md:bg-transparent w-75 md:w-fit h-screen md:h-fit top-0 right-0 p-5 md:p-0 border-l md:border-0 border-l-pink-950/10 shadow-xl md:shadow-none hidden md:block">
+                        <div class="block md:hidden">
+                            <button class="text-xl cursor-pointer text-pink-800"><i class="fa-solid fa-xmark"></i></button>
+                            <hr class="bg-pink-500/50 h-px w-full mt-5">
                         </div>
+                        <ul class="flex flex-col md:flex-row justify-between gap-0 md:gap-3.5 mt-5 md:mt-0">
+                            <li class="py-2.5 md:py-5"><a href="#" class="text-lg text-black md:text-white capitalize py-2.5 px-2.5">home</a></li>
+                            <li class="py-2.5 md:py-5"><a href="#" class="text-lg text-black md:text-white capitalize py-2.5 px-2.5">about</a></li>
+                            <li class="py-2.5 md:py-5"><a href="#" class="text-lg text-black md:text-white capitalize py-2.5 px-2.5">page</a></li>
+                            <li class="py-2.5 md:py-5"><a href="#" class="text-lg text-black md:text-white capitalize py-2.5 px-2.5">contact</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- ================ Main ================ -->
+    <!-- ================ Main ================ --> 
     <main>
         <section class="py-20 bg-amber-50">
             <div class="container mx-auto">
                 <h1 class="text-4xl font-bold text-amber-400 text-center">Interviews & Oral History</h1>
-                <div class="flex gap-8 mt-14">
-                    <div class="bg-white rounded-2xl w-full p-10 shadow-2xl">
-                        <h3 class="text-2xl text-teal-900">Freedom Fighter Interview</h3>
+                <div class="flex flex-col md:flex-row gap-8 mt-14">
+                    <div class="bg-white rounded-2xl w-full p-5 xl:p-10 shadow-2xl">
+                        <h3 class="text-2xl text-pink-950">Freedom Fighter Interview</h3>
                         <p class="mt-2 mb-5">An oral history interview describing experiences during the Liberation War.</p>
                         <img src="images.jpg" alt="cd" class="w-full">
                         <audio controls class="w-full">
@@ -72,8 +56,8 @@
                         </audio>
                     </div>
 
-                    <div class="bg-white rounded-2xl w-full p-10 shadow-2xl">
-                        <h3 class="text-2xl text-teal-900">Historical Video Interview</h3>
+                    <div class="bg-white rounded-2xl w-full p-5 xl:p-10 shadow-2xl">
+                        <h3 class="text-2xl text-pink-950">Historical Video Interview</h3>
                         <p class="mt-2 mb-5">A video interview preserving historical memories and experiences.</p>
                         <video controls class="w-full">
                             <source src="video.mp4"type="video/mp4">Your browser does not support video.
@@ -85,23 +69,46 @@
     </main>
 
     <!-- ================ footer ================ -->
-    <footer class="bg-teal-900 text-white">
-        <div class="w-full px-6 lg:px-12 py-10 flex flex-col md:flex-row justify-between gap-6">
-            <div>
-                <b class="text-xl capitalize">blooming oasis</b>
-                <p class="text-green-100/70 mt-2">Plants that make life better.</p>
+    <footer class="bg-pink-950 py-10">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+                <div class="grid justify-center sm:justify-start mb-5">
+                    <a href="#" class="text-3xl font-bold text-white text-center sm:text-start">BACK|cate</a>
+                    <p class="text-sm text-white mt-2 mb-4 text-center sm:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul class="flex gap-6 text-lg text-white justify-center sm:justify-start">
+                        <li class=""><a href="#" class="capitalize">Link 1</a></li>
+                        <li class=""><a href="#" class="capitalize">Link 2</a></li>
+                        <li class=""><a href="#" class="capitalize">Link 3</a></li>
+                        <li class=""><a href="#" class="capitalize">Link 4</a></li>
+                    </ul>
+                    <div class="mt-1.5 flex gap-2 justify-center sm:justify-start">
+                        <a href="#" class="text-4xl text-white"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="text-4xl text-white"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="text-4xl text-white"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#" class="text-4xl text-white"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="grid justify-center sm:justify-end">
+                    <ul class="flex gap-6 text-lg text-white mb-2.5">
+                        <li class=""><a href="#" class="capitalize">home</a></li>
+                        <li class=""><a href="#" class="capitalize">about</a></li>
+                        <li class=""><a href="#" class="capitalize">page</a></li>
+                        <li class=""><a href="#" class="capitalize">contact</a></li>
+                    </ul>
+                    <form action="">
+                        <input type="email" placeholder="Enter Email" class="bg-white w-full p-2.5 mb-2 outline-0">
+                        <div class="">
+                            <button class="text-lg text-pink-950 bg-white capitalize font-bold w-full p-2 cursor-pointer">send <i class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="flex gap-6 text-sm">
-                <a class="text-white hover:text-amber-400 transition-all" href="index.html">Home</a>
-                <a class="text-white hover:text-amber-400 transition-all" href="product.html">Plants</a>
-                <a class="text-white hover:text-amber-400 transition-all" href="about.html">About</a>
-                <a class="text-white hover:text-amber-400 transition-all" href="contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="border-t border-white/10 text-center py-4 text-xs text-green-100/60 flex justify-around">
-            <span>© 2026 Blooming Oasis. All rights reserved.</span>
-            <div>
-                <span id="time"></span>
+            <hr class="mt-4 text-white/50">
+            <div class="pt-3 text-white text-sm flex flex-col sm:flex-row justify-center">
+                <span class="me-2 justify-center flex">© 2026 ... . All rights reserved <span class="hidden sm:block ml-1.5">|</span></span>
+                <div>
+                    <span id="time" class="time text-center block"></span>
+                </div>
             </div>
         </div>
     </footer>
