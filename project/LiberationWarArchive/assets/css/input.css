@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+    --font-Roboto: "Roboto", sans-serif;
+    --font-Italianno: "Italianno", cursive;
+}
+
+@theme {
+    --color-primary: #08231E;
+    --color-secondary: #0D3028;
+    --color-accent: #15782F;
+    --color-olive: #49601C;
+    --color-sage: #6F823B;
+    --color-background: #E7EDDD;
+    --color-surface: #F5F6F3;
+    --color-text: #08231E;
+    --color-text-light: #244c39;
+}
+
+:root {
+    --primary: #08231E;
+    --secondary: #0D3028;
+    --accent: #15782F;
+    --olive: #49601C;
+    --sage: #6F823B;
+    --background: #E7EDDD;
+    --surface: #F5F6F3;
+    --white: #FEFEFE;
+    --text: #08231E;
+    --text-light: #244c39;
+}

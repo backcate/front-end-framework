@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- daisy-ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/output.css">
+    <title>Green Plants</title>
+</head>
+<body class="relative">
+    <!-- ======================== Navbar Part ======================== -->
+    <nav class="bg-primary relative">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/image/logo/logo-1.png" alt="logo" class="w-15">
+                    <h1 class="text-surface font-Italianno text-5xl">Green Plants</h1>
+                </a>
+                <div class="p-7 hidden lg:block">
+                    <ul class="flex gap-3 text-lg capitalize font-bold">
+                        <li><a href="index.html" class="relative text-white py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">home</span></a></li>
+                        <li><a href="product.html" class="relative text-white py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">product</span></a></li>
+                        <li><a href="about.html" class="relative text-white py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">about</span></a></li>
+                        <li><a href="contact.html" class="relative text-white py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-8 text-2xl">
+                    <button class="text-white cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="text-white block lg:hidden cursor-pointer"><i class="fa-solid fa-bars"></i></i></button>
+                    <div class="hidden lg:hidden">
+                        <div class="absolute w-screen h-screen bg-secondary/50 z-10 top-0 left-0"></div>
+                        <div class="absolute bg-background w-75 h-screen top-0 right-0 z-20">
+                            <div class="flex justify-between p-5">
+                                <button class="cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+                                <a href="index.html" class="flex items-center">
+                                    <img src="assets/image/logo/logo-1.png" alt="logo" class="w-10">
+                                    <h1 class="text-text-light font-Italianno text-3xl">Green Plants</h1>
+                                </a>
+                            </div>
+                            <hr class="text-accent mx-2.5">
+                            <ul class="flex flex-col mt-10 text-lg capitalize font-bold">
+                                <li class="w-full h-12 flex justify-center items-center"><a href="index.html" class="relative hover:text-accent transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-accent before:bottom-0 before:left-0">home</a></li>
+                                <li class="w-full h-12 flex justify-center items-center"><a href="product.html" class="relative hover:text-accent transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-accent before:bottom-0 before:left-0">product</a></li>
+                                <li class="w-full h-12 flex justify-center items-center"><a href="about.html" class="relative hover:text-accent transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-accent before:bottom-0 before:left-0">about</a></li>
+                                <li class="w-full h-12 flex justify-center items-center"><a href="contact.html" class="relative hover:text-accent transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-accent before:bottom-0 before:left-0">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================== Main Part ======================== -->
+    <main>
+        <!--  -->
+        <section class="bg-background py-25">
+            <div class="max-w-5xl mx-auto">
+                <div class="">
+                    <div class="bg-surface rounded-[28px] p-15">
+                        <h2 class="text-3xl font-black capitalize mb-5">contact us</h2>
+                        <form action="" method="post" class="flex flex-col gap-6" id="formList">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                                <div class="flex flex-col relative">
+                                    <label for="" class="capitalize font-semibold mb-2 text-[18px]">your name</label>
+                                    <input id="contact_name" type="text" placeholder="Enter Your Name" class="border-purple-700 mb-4.5 border-2 py-2 outline-none px-3.5 rounded text-[18px]">
+                                </div>
+                                <div class="flex flex-col relative -mt-4.5 sm:mt-0">
+                                    <label for="" class="capitalize font-semibold mb-2 text-[18px]">your email</label>
+                                    <input id="contact_email" type="email" placeholder="Enter Your Email" class="border-purple-700 mb-4.5 border-2 py-2 outline-none px-3.5 rounded text-[18px]">
+                                </div>
+                            </div>
+                            <div class="flex flex-col relative">
+                                <label for="" class="capitalize font-semibold mb-2 text-[18px]">message</label>
+                                <textarea name="message" id="contact_message" placeholder="Write you message here..." class="border-purple-700 mb-4.5 border-2 py-2 outline-none px-3.5 rounded text-[18px] h-40"></textarea>
+                            </div>
+                            <div class="">
+                                <button id="submit" type="submit" class="bg-purple-600 py-2 px-4 rounded text-white capitalize text-[18px] hover:bg-purple-800 transition cursor-pointer w-full">send message <i class="fa-solid fa-paper-plane ml-1"></i></button>
+                                <p id="check_error" class="text-red-600 capitalize text-[12px] py-0 px-2 mt-1.5"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <!-- ======================== Footer Part ======================== -->
+    <footer class="bg-green-950 text-white">
+        <div class="w-full px-6 lg:px-12 py-10 flex flex-col md:flex-row justify-between gap-6">
+            <div>
+                <b class="text-xl capitalize">blooming oasis</b>
+                <p class="text-green-100/70 mt-2">Plants that make life better.</p>
+            </div>
+            <div class="flex gap-6 text-sm">
+                <a href="index.html">Home</a>
+                <a href="product.html">Plants</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="border-t border-white/10 text-center py-4 text-xs text-green-100/60 flex justify-around">
+            <span>© 2026 Blooming Oasis. All rights reserved.</span>
+            <div>
+                <span id="time"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="assets/javascript/custom.js"></script>
+</body>
+</html>

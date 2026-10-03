@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <title>Document</title>
+</head>
+<body class="bg-amber-50">
+    <!-- ================ Navbar ================ -->
+    <nav class="bg-emerald-800 sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div class="flex items-center">
+                    <a href="#" class="text-3xl font-bold text-red-600">Liberation War Archive</a>
+                </div>
+                <div class="">
+                    <button class="flex md:hidden text-white text-2xl my-5 cursor-pointer mobileMenuButton"><i class="fa-solid fa-bars"></i></button>
+                    <div class="absolute w-full h-screen bg-pink-950/50 top-0 left-0 hidden mobileOffcanva"></div>
+                    <div class="absolute md:static bg-white md:bg-transparent w-75 md:w-fit h-screen md:h-fit top-0 right-0 p-5 md:p-0 border-l md:border-0 border-l-pink-950/10 shadow-xl md:shadow-none hidden md:block mobileMenu transform md:transform-none translate-x-full md:translate-0 transition duration-300">
+                        <div class="block md:hidden">
+                            <button class="text-xl cursor-pointer text-pink-600"><i class="fa-solid fa-xmark"></i></button>
+                            <hr class="bg-pink-500/50 h-px w-full mt-5">
+                        </div>
+                        <ul class="flex flex-col md:flex-row justify-between gap-0 md:gap-3.5 mt-5 md:mt-0">
+                            <li class="py-2.5 md:py-5"><a href="index.html" class="text-lg bg-transparent hover:bg-red-600 rounded-xl text-white hover:text-white transition-all md:text-white capitalize py-2.5 px-2.5">home</a></li>
+                            <li class="py-2.5 md:py-5"><a href="documents.html" class="text-lg bg-transparent hover:bg-red-600 rounded-xl text-white hover:text-white transition-all md:text-white capitalize py-2.5 px-2.5">documents</a></li>
+                            <li class="py-2.5 md:py-5"><a href="interviews.html" class="text-lg bg-transparent hover:bg-red-600 rounded-xl text-white hover:text-white transition-all md:text-white capitalize py-2.5 px-2.5">interviews</a></li>
+                            <li class="py-2.5 md:py-5"><a href="gallery.html" class="text-lg bg-transparent hover:bg-red-600 rounded-xl text-white hover:text-white transition-all md:text-white capitalize py-2.5 px-2.5">gallery</a></li>
+                            <li class="py-2.5 md:py-5"><a href="contact.html" class="text-lg bg-transparent hover:bg-red-600 rounded-xl text-white hover:text-white transition-all md:text-white capitalize py-2.5 px-2.5">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================ Main ================ -->
+    <main class="">
+        <!-- Banner -->
+        <section class="relative overflow-hidden bg-emerald-900 text-white">
+            <div class="absolute -right-16 -top-20 size-64 rounded-full bg-red-600"></div>
+            <div class="absolute -right-40 top-10 size-96 rounded-full border border-red-400/30"></div>
+            <div class="relative mx-auto max-w-6xl px-4 py-14 text-center md:text-left">
+                <p class="text-sm font-bold uppercase tracking-widest text-red-300">Get in touch</p>
+                <h1 class="mt-2 text-4xl font-extrabold md:text-5xl capitalize">Contact and Contribution</h1>
+                <p class="mt-4 max-w-2xl text-emerald-50/90">You can send a message, provide feedback, or contribute documents and photographs to the archive using this form.</p>
+            </div>
+        </section>
+
+        <section class="my-20">
+            <div class="container mx-auto">
+                <section class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+                    <div class="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 shadow-sm lg:col-span-2">
+                        <div class="h-1.5 bg-amber-800"></div>
+                        <div class="p-6 md:p-8">
+                            <h2 class="text-2xl font-extrabold text-white">Contact Form</h2>
+                            <form id="contactForm" class="mt-6 space-y-5">
+                                <div><label for="name" class="mb-1 block text-sm font-semibold text-slate-300">Name</label><input id="name" type="text" placeholder="Enter your name" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-slate-100 placeholder:text-slate-400 focus:border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-700/30"></div>
+                                <div><label for="email" class="mb-1 block text-sm font-semibold text-slate-300">Email</label><input id="email" type="email" placeholder="Enter your email" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-slate-100 placeholder:text-slate-400 focus:border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-700/30"></div>
+                                <div><label for="subject" class="mb-1 block text-sm font-semibold text-slate-300">Subject</label><input id="subject" type="text" placeholder="Enter subject" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-slate-100 placeholder:text-slate-400 focus:border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-700/30"></div>
+                                <div><label for="message" class="mb-1 block text-sm font-semibold text-slate-300">Message</label><textarea id="message" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-slate-100 placeholder:text-slate-400 focus:border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-700/30" rows="5" placeholder="Write your message"></textarea></div>
+                                <div><label for="file" class="mb-1 block text-sm font-semibold text-slate-300">File Upload</label><input id="file" type="file" class="w-full rounded-lg border border-slate-700 bg-slate-900 text-sm text-slate-400 file:mr-4 file:cursor-pointer file:rounded-l-md file:border-0 file:bg-amber-800 file:px-4 file:py-2.5 file:font-semibold file:text-white hover:file:bg-amber-900"></div>
+                                <p id="formMessage" class="text-sm font-semibold"></p>
+                                <button type="submit" class="rounded-lg bg-yellow-600 px-6 py-3 font-bold text-white shadow transition hover:bg-yellow-500">Submit Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <aside class="relative overflow-hidden rounded-2xl bg-amber-900 text-amber-50 shadow-sm">
+                        <div class="absolute -right-8 -top-8 size-28 rounded-full blur-3xl bg-amber-500/30"></div>
+                        <div class="relative space-y-3 p-6 md:p-8">
+                            <h2 class="text-2xl font-extrabold text-white">Archive Administrator</h2>
+                            <p><strong class="text-white">Name:</strong> Muhammad Ali</p>
+                            <p><strong class="text-white">Email:</strong> muhammad@gmail.com</p>
+                            <p><strong class="text-white">Phone:</strong> +880 1616xxxxx</p>
+                            <p><strong class="text-white">Address:</strong> Dhaka, Bangladesh</p>
+                            <div class="my-4 h-px bg-white/20"></div>
+                            <p class="text-amber-100">Please contact us if you have historical documents, photographs, interviews, or memories related to the Liberation War.</p>
+                        </div>
+                    </aside>
+                </section>
+            </div>
+        </section>
+
+    </main>
+    <!-- ================ footer ================ -->
+    <footer class="bg-emerald-900 py-10">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+                <div class="grid justify-center sm:justify-start mb-5">
+                    <a href="#" class="text-3xl font-bold text-red-800 text-center sm:text-start">Liberation War Archive</a>
+                    <p class="text-sm text-white mt-2 mb-4 text-center sm:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul class="flex gap-6 text-lg text-white justify-center sm:justify-start">
+                        <li class=""><a href="#" class="capitalize hover:text-red-500 transition-all">Link 1</a></li>
+                        <li class=""><a href="#" class="capitalize hover:text-red-500 transition-all">Link 2</a></li>
+                        <li class=""><a href="#" class="capitalize hover:text-red-500 transition-all">Link 3</a></li>
+                        <li class=""><a href="#" class="capitalize hover:text-red-500 transition-all">Link 4</a></li>
+                    </ul>
+                    <div class="mt-1.5 flex gap-2 justify-center sm:justify-start">
+                        <a href="#" class="text-4xl text-white hover:text-emerald-200 transition-all"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="text-4xl text-white hover:text-emerald-200 transition-all"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="text-4xl text-white hover:text-emerald-200 transition-all"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#" class="text-4xl text-white hover:text-emerald-200 transition-all"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="grid justify-center sm:justify-end">
+                    <ul class="flex gap-6 text-lg text-white mb-2.5">
+                        <li class=""><a href="#" class="capitalize text-white hover:text-red-500 transition-all">home</a></li>
+                        <li class=""><a href="#" class="capitalize text-white hover:text-red-500 transition-all">about</a></li>
+                        <li class=""><a href="#" class="capitalize text-white hover:text-red-500 transition-all">page</a></li>
+                        <li class=""><a href="#" class="capitalize text-white hover:text-red-500 transition-all">contact</a></li>
+                    </ul>
+                    <form action="">
+                        <input type="email" placeholder="Enter Email" class="bg-white w-full p-2.5 mb-2 outline-0">
+                        <div class="">
+                            <button class="text-lg hover:text-white text-red-800 bg-white hover:bg-red-800 transition-all capitalize font-bold w-full p-2 cursor-pointer">send <i class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4 text-white/50">
+            <div class="pt-3 text-white text-sm flex flex-col sm:flex-row justify-center">
+                <span class="me-2 justify-center flex">© 2026 Muhammad_Ali . All rights reserved <span class="hidden sm:block ml-1.5">|</span></span>
+                <div>
+                    <span id="time" class="time text-center block"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
+
+
+<!--            npx @tailwindcss/cli -i ./project/LiberationWarArchive/assets/css/input.css -o ./project/LiberationWarArchive/assets/css/output.css --watch            -->

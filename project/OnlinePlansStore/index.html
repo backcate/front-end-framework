@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!--  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/output.css">
+    <title>Green Plants</title>
+</head>
+<body class="relative">
+    <!-- ======================== Navbar Part ======================== -->
+    <nav class="bg-primary relative">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/image/logo/logo-1.png" alt="logo" class="w-15">
+                    <h1 class="text-surface font-Italianno text-5xl">Green Plants</h1>
+                </a>
+                <div class="p-7 hidden lg:block">
+                    <ul class="flex gap-3 text-lg capitalize font-bold">
+                        <li><a href="index.html" class="relative text-white py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">home</span></a></li>
+                        <li><a href="product.html" class="relative text-white py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">product</span></a></li>
+                        <li><a href="about.html" class="relative text-white py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">about</span></a></li>
+                        <li><a href="contact.html" class="relative text-white py-2 px-6 hover:transition-all hover:duration-300 hover:ease-in-out- hover:text-text before:absolute before:content-[''] before:w-full before:h-0.5 hover:before:h-full before:bg-white before:bottom-0 before:left-0 before:rounded-lg before:transition-all before:duration-300 before:ease-in-out-"><span class="relative z-10">contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-8 text-2xl">
+                    <button class="text-white cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="text-white block lg:hidden cursor-pointer"><i class="fa-solid fa-bars"></i></i></button>
+                    <div class="hidden lg:hidden">
+                        <div class="absolute w-screen h-screen bg-secondary/50 z-10 top-0 left-0"></div>
+                        <div class="absolute bg-background w-75 h-screen top-0 right-0 z-20">
+                            <div class="flex justify-between p-5">
+                                <button class="cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+                                <a href="index.html" class="flex items-center">
+                                    <img src="assets/image/logo/logo-1.png" alt="logo" class="w-10">
+                                    <h1 class="text-text-light font-Italianno text-3xl">Green Plants</h1>
+                                </a>
+                            </div>
+                            <hr class="text-accent mx-2.5">
+                            <ul class="flex flex-col mt-10 text-lg capitalize font-bold">
+                                <li class="w-full h-12 flex justify-center items-center"><a href="index.html" class="relative hover:text-accent transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-accent before:bottom-0 before:left-0">home</a></li>
+                                <li class="w-full h-12 flex justify-center items-center"><a href="product.html" class="relative hover:text-accent transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-accent before:bottom-0 before:left-0">product</a></li>
+                                <li class="w-full h-12 flex justify-center items-center"><a href="about.html" class="relative hover:text-accent transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-accent before:bottom-0 before:left-0">about</a></li>
+                                <li class="w-full h-12 flex justify-center items-center"><a href="contact.html" class="relative hover:text-accent transition-all before:absolute before:content-[''] before:w-0 hover:before:w-full before:transition-all before:h-0.5 before:bg-accent before:bottom-0 before:left-0">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================== Main Part ======================== -->
+    <main>
+        <!-- Hero section -->
+        <section>
+            <div class="w-full h-[30vh] md:h-[40vh] lg:h-[60vh] bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/image/banner/banner-1.png');">
+                <div class="container mx-auto flex flex-col justify-center h-full">
+                    <h4 class="uppercase font-semibold text-accent text-sm md:text-[16px] lg:text-lg">welcome to <span class="font-Italianno text-xl md:text-2xl">Green Plants</span></h4>
+                    <h1 class="capitalize text-text text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-4 md:mb-6 lg:mb-8">bring nature</h1>
+                    <p class="font-semibold text-accent text-[16px] lg:text-lg">Beautiful plants, Better spaces. Happier living</p>
+                    <div class="mt-5">
+                        <button class="bg-primary hover:bg-transparent border-2 border-primary text-white hover:text-primary px-4 sm:px-6 lg:px-7.5 py-2 lg:py-3 rounded-full cursor-pointer hover:border-2 me-5 capitalize font-bold text-sm sm:text-[16px]">shop plants <i class="fa-solid fa-arrow-right-long ms-0.5 sm:ms-1 md:ms-1.5"></i></button>
+                        <button class=" hover:bg-primary border-2 border-primary text-primary hover:text-white px-4 sm:px-6 lg:px-7.5 py-2 lg:py-3 rounded-full cursor-pointer hover:border-2 capitalize text-sm font-bold sm:text-[16px]">find my plant</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plant Matchmaker -->
+        <section class="bg-primary">
+            <div class="max-w-5xl mx-auto px-0 sm:px-5 lg:px-8 py-20">
+                <h4 class="text-accent text-center">plant matchmaker</h4>
+                <h1 class="text-accent text-4xl font-bold text-center my-3">Choose a plant that fits your space</h1>
+                <p class="text-sage text-center">Answer three questions and get a simple recommendation.</p>
+                <div class="bg-surface px-8 md:px-25 py-15 rounded-none sm:rounded-2xl mt-9">
+                    <div class=" card grid md:grid-cols-3 gap-5">
+                        <div class="">
+                            <label for="sun_light" class="font-semibold capitalize block text-accent">sun light</label>
+                            <select name="sun_light" id="sun_light" class="bg-background py-2.5 px-5 rounded-lg w-full mt-2.5 shadow-lg text-text">
+                                <option value="" selected>Select</option>
+                                <option value="bright">Bright indirect</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="care_level" class="font-semibold capitalize block text-accent">care level</label>
+                            <select name="care_level" id="care_level" class="bg-background py-2.5 px-5 rounded-lg w-full mt-2.5 shadow-lg text-text">
+                                <option value="" selected>Select</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="pets" class="font-semibold capitalize block text-accent">pets</label>
+                            <select name="pets" id="pets" class="bg-background py-2.5 px-5 rounded-lg w-full mt-2.5 shadow-lg text-text">
+                                <option value="" selected>Select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="quiz_btn" class="bg-primary w-full rounded-lg p-3 text-lg text-white font-bold capitalize mt-5 cursor-pointer">show recommendation</button>
+                    <div id="quiz_result" class="hidden md:col-span-3 rounded-xl bg-background p-4 text-text-light font-semibold mt-5"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Collection  -->
+        <section class="bg-surface py-25">
+            <div class="container mx-auto">
+                <div class="w-full  flex flex-col 2xl:flex-row gap-1.5">
+                    <div class="bg-background w-full 2xl:w-1/4 p-5">
+                        <div class="">
+                            <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-text-light">Explore Our</p>
+                            <h2 class="mt-1 font-serif text-[25px] font-bold leading-none text-text-light">Plant Gallery</h2>
+                            <p class="mt-3 max-w-47.5text-[11px] leading-[1.7] text-[#315b43]">A vibrant collection of nature's beauty. Discover a variety of plants to brighten your home and your mood.</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-[14px] italic text-[#34734c]">Green vibes, always!</p>
+                        </div>
+                    </div>
+                    <div class="w-full 2xl:w-3/4 h-125">
+                        <div class="grid grid-cols-11 grid-rows-2 gap-1.5 h-full">
+                            <div class="col-start-1 col-end-4 row-start-1 row-end-4 h-">
+                                <img src="assets/image/gallery/1.jpeg" alt="" class="h-full w-full bg-center bg-cover">
+                            </div>
+                            <div class="col-start-4 col-end-8 row-start-1 row-end-2">
+                                <img src="assets/image/gallery/2.jpeg" alt="" class="h-full w-full bg-center bg-cover">
+                            </div>
+                            <div class="col-start-8 col-end-10 row-start-1 row-end-2">
+                                <img src="assets/image/gallery/3.jpeg" alt="" class="h-full w-full bg-center bg-cover">
+                            </div>
+                            <div class="col-start-10 col-end-12 row-start-1 row-end-2">
+                                <img src="assets/image/gallery/4.jpeg" alt="" class="h-full w-full bg-center bg-cover">
+                            </div>
+                            <div class="col-start-4 col-end-6 row-start-2 row-end-4">
+                                <img src="assets/image/gallery/5.jpg" alt="" class="h-full w-full bg-center bg-cover">
+                            </div>
+                            <div class="col-start-6 col-end-9 row-start-2 row-end-4">
+                                <img src="assets/image/gallery/6.jpg" alt="" class="h-full w-full bg-center bg-cover">
+                            </div>
+                            <div class="col-start-9 col-end-12 row-start-2 row-end-4">
+                                <img src="assets/image/gallery/7.jpg" alt="" class="h-full w-full bg-center bg-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Houseplants -->
+        <section class="bg-primary py-25">
+            <div class="container mx-auto">
+                <div class=" text-white flex justify-between">
+                    <h1 class="text-3xl capitalize">popular houseplants</h1>
+                    <a href="product.html" class="hover:text-accent">view all plant <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="mt-5">
+                    <div class="card bg-base-100 w-96 shadow-sm">
+                        <figure class="px-10 pt-10">
+                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" class="rounded-xl"/>
+                        </figure>
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-text-light capitalize">monstera deliciosa</h2>
+                            <span class="text-text-light">200 TK</span>
+                            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                            <div class="card-actions w-full">
+                                <button class="btn btn-primary capitalize w-full" onclick="my_modal_1.showModal()">view details</button>
+                                <dialog id="my_modal_1" class="modal">
+                                    <div class="modal-box">
+                                        <h3 class="text-lg font-bold capitalize text-text-light">monstera deliciosa plant</h3>
+                                        <p class="py-4 text-text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, dignissimos voluptas? Nisi amet molestiae nulla suscipit. Eius, facilis alias est saepe porro, quod eligendi non deleniti doloremque quos fugiat similique!</p>
+                                        <div class="modal-action">
+                                        <form method="dialog">
+                                            <button class="btn">Close</button>
+                                        </form>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2.snake plant, 3.peace lily, 3.spider plant -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Curated Collections -->
+        <section class="bg-surface py-25">
+            <div class="container mx-auto">
+                <div class=" text-text flex justify-between">
+                    <h1 class="text-3xl capitalize">popular houseplants</h1>
+                    <a href="product.html" class="hover:text-accent">view all plant <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="mt-5">
+                    <div class="card bg-base-100 image-full w-96 shadow-xl">
+                        <figure>
+                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">beginner collection</h2>
+                            <p>Easy-care plants for every home.</p>
+                            <div class="card-actions justify-start">
+                            <a href="product.html" class="btn btn-primary">shop now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- pet-friendly collection||safe for furry friends.||shop now||sunny space collection||Perfect for bright, sunny spots. -->
+            </div>
+        </section>
+
+        <!-- Plant Care -->
+        <section class="bg-primary">
+            <div class="max-w-7xl mx-auto px-5 lg:px-8 py-20">
+                <div class="card p-8 md:p-12 bg-background border-0 grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="eyebrow">PLANT CARE</p>
+                        <h2 class="text-4xl mt-2">Good care should feel simple.</h2>
+                        <p class="text-text mt-4 leading-7">Learn how to understand light, watering, repotting and everyday maintenance without complicated routines.</p>
+                        <a class="btn bg-primary text-white mt-7" href="product.html">Explore care guide</a>
+                    </div>
+                    <ul class="band-members space-y-3">
+                        <li class="bg-surface p-5 rounded-2xl shadow-lg">Light placement and rotation</li>
+                        <li class="bg-surface p-5 rounded-2xl shadow-lg">Watering based on soil moisture</li>
+                        <li class="bg-surface p-5 rounded-2xl shadow-lg">Repotting and root-space guidance</li>
+                        <li class="bg-surface p-5 rounded-2xl shadow-lg">Leaf cleaning and basic maintenance</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Blooming Oasis -->
+        <section class="bg-surface w-full px-6 lg:px-12 py-14">
+            <div class="rounded-3xl overflow-hidden relative min-h-65">
+                <img class="absolute inset-0 w-full h-full object-cover" src="./assets/image/1.jpg"/>
+                <div class="absolute inset-0 bg-green-950/60"></div>
+                <div class="relative p-10 text-white max-w-2xl">
+                    <p class="font-bold text-text uppercase">about blooming oasis</p>
+                    <h2 class="text-4xl font-extrabold mt-2">More than a plant shop  we are a community of plant lovers.</h2>
+                    <a href="about.html" class="inline-block mt-5 bg-primary text-surface px-5 py-3 rounded-xl font-bold">Our Story <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================== Footer Part ======================== -->
+    <footer class="bg-green-950 text-white mt-16">
+        <div class="w-full px-6 lg:px-12 py-10 flex flex-col md:flex-row justify-between gap-6">
+            <div>
+                <b class="text-xl capitalize">blooming oasis</b>
+                <p class="text-green-100/70 mt-2">Plants that make life better.</p>
+            </div>
+            <div class="flex gap-6 text-sm">
+                <a href="index.html">Home</a>
+                <a href="product.html">Plants</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="border-t border-white/10 text-center py-4 text-xs text-green-100/60 flex justify-around">
+            <span>© 2026 Blooming Oasis. All rights reserved.</span>
+            <div>
+                <span id="time"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="assets/javascript/custom.js"></script>
+</body>
+</html>
+
+<!--             npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch              -->

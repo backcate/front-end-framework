@@ -28,7 +28,7 @@ const galleryCard = (photo) =>
                     <div class="mt-2.5">
                         <h1 class="${TITLE}">${photo.title}</h1>
                         <p>${photo.description}</p>
-                        <button class="${BTN_FILL}" data-download="">Download <i class="fa-solid fa-download"></i></button>
+                        <button class="${BTN_FILL}" data-download="${photo.id}">Download <i class="fa-solid fa-download"></i></button>
                     </div>
                 </div>
             </dialog>
@@ -38,6 +38,40 @@ const galleryCard = (photo) =>
 function render(containerId, items, cardTemplate) {
     $(containerId).innerHTML = items.map(cardTemplate).join("");
 }
+
+function downloadImage(photo) {
+    fetch(photo.image)
+        .then(response => response.blob())
+        .then(blob => {
+            const url = URL.createObjectURL(blob);
+
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = photo.title + ".jpg";
+
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+
+            URL.revokeObjectURL(url);
+        })
+        .catch(error => {
+            console.error("Download failed:", error);
+        });
+}
+
+document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-download]");
+
+    if (!button) return;
+
+    const id = Number(button.dataset.download);
+    const photo = gallery.find(item => item.id === id);
+
+    if (photo) {
+        downloadImage(photo);
+    }
+});
 
 if ($("galleryContainer")) {
     render("galleryContainer", gallery, galleryCard);
