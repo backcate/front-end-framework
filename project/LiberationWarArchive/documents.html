@@ -24,7 +24,7 @@
                 <div class="">
                     <button class="flex md:hidden text-white text-2xl my-5 cursor-pointer mobileMenuButton"><i class="fa-solid fa-bars"></i></button>
                     <div class="absolute w-full h-screen bg-pink-950/50 top-0 left-0 hidden mobileOffcanva"></div>
-                    <div class="absolute md:static bg-white md:bg-transparent w-75 md:w-fit h-screen md:h-fit top-0 right-0 p-5 md:p-0 border-l md:border-0 border-l-pink-950/10 shadow-xl md:shadow-none hidden md:block mobileMenu transform md:transform-none translate-x-full md:translate-0 transition duration-300">
+                    <div class="absolute md:static bg-emerald-800 md:bg-transparent w-75 md:w-fit h-screen md:h-fit top-0 right-0 p-5 md:p-0 border-l md:border-0 border-l-pink-950/10 shadow-xl md:shadow-none hidden md:block mobileMenu transform md:transform-none translate-x-full md:translate-0 transition duration-300">
                         <div class="block md:hidden">
                             <button class="text-xl cursor-pointer text-pink-600"><i class="fa-solid fa-xmark"></i></button>
                             <hr class="bg-pink-500/50 h-px w-full mt-5">
@@ -58,25 +58,25 @@
         <section class="py-20">
             <div class="container mx-auto">
                 <section class="mb-10">
-                    <div class="flex flex-wrap justify-center gap-2">
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="All">All</button>
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="Declaration">Declaration</button>
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="Treaty">Treaty</button>
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="Official Correspondence">Official Correspondence</button>
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="Report">Report</button>
+                    <div class="flex flex-wrap justify-start gap-2">
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="All">All</button>
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="Declaration">Declaration</button>
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="Treaty">Treaty</button>
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="Official Correspondence">Official Correspondence</button>
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="Report">Report</button>
                     </div>
                 </section>
                 <div id="documentsContainer" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
-                <dialog id="documentModal" class="bg-slate-900 text-slate-200 m-auto w-full max-w-lg overflow-hidden rounded-3xl border-0 p-0 shadow-2xl backdrop:bg-black/60">
-                    <div class="h-2 bg-linear-to-r from-amber-800 via-amber-800 to-yellow-600"></div>
-                    <div class="p-6">
+                <dialog id="documentModal" class="relative bg-emerald-900 text-white m-auto w-full max-w-lg overflow-hidden rounded-none sm:rounded-3xl border-0 p-0 shadow-2xl backdrop:bg-black/60">
+                    <div class="bg-red-600/50 size-60 rounded-full absolute -right-20 -top-15"></div>
+                    <div class="relative z-1 p-6">
                         <h3 id="modalTitle" class="text-xl font-extrabold text-white"></h3>
-                        <p id="modalCategory" class="mt-3 font-semibold text-yellow-300"></p>
+                        <p id="modalCategory" class="mt-3 font-semibold text-red-600"></p>
                         <p id="modalDate" class="mt-2 text-slate-300"></p>
                         <p id="modalSource" class="mt-2 text-slate-300"></p>
                         <p id="modalDescription" class="mt-4 leading-relaxed text-slate-400"></p>
                         <div class="mt-6 flex justify-end">
-                            <form method="dialog"><button class="rounded-lg bg-amber-800 px-5 py-2 font-semibold text-white transition hover:bg-amber-900">Close</button></form>
+                            <form method="dialog"><button class="rounded-lg bg-red-600 px-5 py-2 font-semibold text-white transition hover:bg-red-500">Close</button></form>
                         </div>
                     </div>
                 </dialog>
@@ -88,7 +88,7 @@
         <div class="container mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2">
                 <div class="grid justify-center sm:justify-start mb-5">
-                    <a href="#" class="text-3xl font-bold text-red-800 text-center sm:text-start">Liberation War Archive</a>
+                    <a href="#" class="text-3xl font-bold text-red-600 text-center sm:text-start">Liberation War Archive</a>
                     <p class="text-sm text-white mt-2 mb-4 text-center sm:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <ul class="flex gap-6 text-lg text-white justify-center sm:justify-start">
                         <li class=""><a href="#" class="capitalize hover:text-red-500 transition-all">Link 1</a></li>
@@ -113,7 +113,7 @@
                     <form action="">
                         <input type="email" placeholder="Enter Email" class="bg-white w-full p-2.5 mb-2 outline-0">
                         <div class="">
-                            <button class="text-lg hover:text-white text-red-800 bg-white hover:bg-red-800 transition-all capitalize font-bold w-full p-2 cursor-pointer">send <i class="fa-regular fa-paper-plane"></i></button>
+                            <button class="text-lg hover:text-white text-emerald-900 bg-red-600 hover:bg-red-500 transition-all capitalize font-bold w-full p-2 cursor-pointer">send <i class="fa-regular fa-paper-plane"></i></button>
                         </div>
                     </form>
                 </div>

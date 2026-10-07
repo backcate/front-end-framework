@@ -24,7 +24,7 @@
                 <div class="">
                     <button class="flex md:hidden text-white text-2xl my-5 cursor-pointer mobileMenuButton"><i class="fa-solid fa-bars"></i></button>
                     <div class="absolute w-full h-screen bg-pink-950/50 top-0 left-0 hidden mobileOffcanva"></div>
-                    <div class="absolute md:static bg-white md:bg-transparent w-75 md:w-fit h-screen md:h-fit top-0 right-0 p-5 md:p-0 border-l md:border-0 border-l-pink-950/10 shadow-xl md:shadow-none hidden md:block mobileMenu transform md:transform-none translate-x-full md:translate-0 transition duration-300">
+                    <div class="absolute md:static bg-emerald-800 md:bg-transparent w-75 md:w-fit h-screen md:h-fit top-0 right-0 p-5 md:p-0 border-l md:border-0 border-l-pink-950/10 shadow-xl md:shadow-none hidden md:block mobileMenu transform md:transform-none translate-x-full md:translate-0 transition duration-300">
                         <div class="block md:hidden">
                             <button class="text-xl cursor-pointer text-pink-600"><i class="fa-solid fa-xmark"></i></button>
                             <hr class="bg-pink-500/50 h-px w-full mt-5">
@@ -58,17 +58,15 @@
         <section class="my-20">
             <div class="container mx-auto">
                 <section class="mb-10">
-                    <div class="flex flex-wrap justify-center gap-2">
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="All">All</button>
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="Events">Events</button>
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="Locations">Locations</button>
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="People">People</button>
-                        <button class="rounded-full border border-amber-800 bg-slate-900 px-4 py-1.5 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white" data-filter="Themes">Themes</button>
+                    <div class="flex flex-wrap justify-start gap-2">
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="All">All</button>
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="Events">Events</button>
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="Locations">Locations</button>
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="People">People</button>
+                        <button class="rounded-xl bg-emerald-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:text-red-600" data-filter="Themes">Themes</button>
                     </div>
                 </section>
-                <div id="galleryContainer" class="grid grid-cols-3 gap-5">
-                    
-                </div>
+                <div id="galleryContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
             </div>
         </section>
 
@@ -78,7 +76,7 @@
         <div class="container mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2">
                 <div class="grid justify-center sm:justify-start mb-5">
-                    <a href="#" class="text-3xl font-bold text-red-800 text-center sm:text-start">Liberation War Archive</a>
+                    <a href="#" class="text-3xl font-bold text-red-600 text-center sm:text-start">Liberation War Archive</a>
                     <p class="text-sm text-white mt-2 mb-4 text-center sm:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <ul class="flex gap-6 text-lg text-white justify-center sm:justify-start">
                         <li class=""><a href="#" class="capitalize hover:text-red-500 transition-all">Link 1</a></li>
@@ -103,7 +101,7 @@
                     <form action="">
                         <input type="email" placeholder="Enter Email" class="bg-white w-full p-2.5 mb-2 outline-0">
                         <div class="">
-                            <button class="text-lg hover:text-white text-red-800 bg-white hover:bg-red-800 transition-all capitalize font-bold w-full p-2 cursor-pointer">send <i class="fa-regular fa-paper-plane"></i></button>
+                            <button class="text-lg hover:text-white text-emerald-900 bg-red-600 hover:bg-red-500 transition-all capitalize font-bold w-full p-2 cursor-pointer">send <i class="fa-regular fa-paper-plane"></i></button>
                         </div>
                     </form>
                 </div>

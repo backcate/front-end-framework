@@ -24,7 +24,7 @@
                 <div class="">
                     <button class="flex md:hidden text-white text-2xl my-5 cursor-pointer mobileMenuButton"><i class="fa-solid fa-bars"></i></button>
                     <div class="absolute w-full h-screen bg-pink-950/50 top-0 left-0 hidden mobileOffcanva"></div>
-                    <div class="absolute md:static bg-white md:bg-transparent w-75 md:w-fit h-screen md:h-fit top-0 right-0 p-5 md:p-0 border-l md:border-0 border-l-pink-950/10 shadow-xl md:shadow-none hidden md:block mobileMenu transform md:transform-none translate-x-full md:translate-0 transition duration-300">
+                    <div class="absolute md:static bg-emerald-800 md:bg-transparent w-75 md:w-fit h-screen md:h-fit top-0 right-0 p-5 md:p-0 border-l md:border-0 border-l-pink-950/10 shadow-xl md:shadow-none hidden md:block mobileMenu transform md:transform-none translate-x-full md:translate-0 transition duration-300">
                         <div class="block md:hidden">
                             <button class="text-xl cursor-pointer text-pink-600"><i class="fa-solid fa-xmark"></i></button>
                             <hr class="bg-pink-500/50 h-px w-full mt-5">
@@ -79,49 +79,67 @@
             <div class="container mx-auto">
                 <div class="">
                     <h1 class="relative text-3xl font-bold capitalize text-center mb-10 before:absolute before:[''] before:bg-red-700 before:w-30 before:h-2 before:-bottom-6 before:left-1/2 before:-translate-1/2">about this archive</h1>
-                    <p class="text-[16px] w-180 mx-auto text-center">The Liberation War is one of the most important parts of Bangladesh history. This archive helps students, researchers, and general visitors learn about historical documents, recorded interviews, and photographs from 1971. </p>
+                    <p class="text-[16px] w-full md:w-180 mx-auto text-center">The Liberation War is one of the most important parts of Bangladesh history. This archive helps students, researchers, and general visitors learn about historical documents, recorded interviews, and photographs from 1971. </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
+                    <div class="relative bg-emerald-900 overflow-hidden shadow-xl rounded-none sm:rounded-2xl">
+                        <div class="absolute bg-emerald-800 size-70 rounded-full -left-1/6 -bottom-1/10"></div>
+                        <div class="absolute bg-red-600 size-100 rounded-full right-10 bottom-1/2 translate-y-1/2"></div>
+                        <div class="relative p-8 z-1">
+                            <h1 class="text-white text-2xl font-semibold">Bangladesh Liberation War</h1>
+                            <p class="text-white mt-5 text-justify">The Bangladesh Liberation War pronounced muktijuddh, also known as the Bangladesh War of Independence, was an armed conflict sparked by the rise of the Bengali nationalist and self-determination movement in East Pakistan, which resulted in the independence of Bangladesh with the help of India. The war began when the Pakistani military junta based in West Pakistan under the orders of Yahya Khan launched Operation Searchlight against East Pakistanis on the night of 25 March 1971, initiating the Bangladesh genocide.</p>
+                        </div>
+                    </div>
+                    <div class="relative bg-emerald-900 overflow-hidden shadow-xl rounded-none sm:rounded-2xl">
+                        <div class="absolute bg-emerald-800 size-70 rounded-full -left-1/6 -bottom-1/10"></div>
+                        <div class="absolute bg-red-600 size-100 rounded-full right-10 bottom-1/2 translate-y-1/2"></div>
+                        <div class="relative p-8 z-1">
+                            <h1 class="text-white text-2xl font-semibold">Bangladesh Liberation War</h1>
+                            <p class="text-white mt-5 text-justify">The Bangladesh Liberation War pronounced muktijuddh, also known as the Bangladesh War of Independence, was an armed conflict sparked by the rise of the Bengali nationalist and self-determination movement in East Pakistan, which resulted in the independence of Bangladesh with the help of India. The war began when the Pakistani military junta based in West Pakistan under the orders of Yahya Khan launched Operation Searchlight against East Pakistanis on the night of 25 March 1971, initiating the Bangladesh genocide.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Card -->
-        <section class="mb-20">
+        <section class="py-20 bg-white">
             <div class="container mx-auto">
                 <h1 class="relative text-3xl font-bold capitalize text-center mb-16 before:absolute before:[''] before:bg-red-700 before:w-30 before:h-2 before:-bottom-6 before:left-1/2 before:-translate-1/2">Featured Sections</h1>
-                <div class="flex gap-5">
+                <div class="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-5">
                     <div class="card bg-base-100 shadow-lg">
                         <figure>
-                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            <img src="./assets/image/Documents.jpeg" alt="Shoes"/>
                         </figure>
                         <div class="card-body bg-emerald-900">
-                            <h2 class="card-title text-white">Card Title</h2>
-                            <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                            <h2 class="card-title text-white">Important Documents</h2>
+                            <p class="text-white">Read simple information about declarations, treaties, official letters, and reports.</p>
                             <div class="card-actions justify-end">
-                                <a href="#" class="rounded-md bg-red-600 px-6 py-3 font-bold text-white shadow-lg transition hover:bg-red-500 capitalize">more info</a>
+                                <a href="documents.html" class="rounded-md bg-red-600 px-6 py-3 font-bold text-white shadow-lg transition hover:bg-red-500 capitalize">View Documents</a>
                             </div>
                         </div>
                     </div>
                     <div class="card bg-base-100 shadow-lg">
                         <figure>
-                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            <img src="assets/image/Documents.jpeg" alt="Shoes"/>
                         </figure>
                         <div class="card-body bg-emerald-900">
-                            <h2 class="card-title text-white">Card Title</h2>
-                            <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                            <h2 class="card-title text-white">Interviews</h2>
+                            <p class="text-white">Learn from interview summaries of freedom fighters, witnesses, and organizers.</p>
                             <div class="card-actions justify-end">
-                                <a href="#" class="rounded-md bg-red-600 px-6 py-3 font-bold text-white shadow-lg transition hover:bg-red-500 capitalize">more info</a>
+                                <a href="interviews.html" class="rounded-md bg-red-600 px-6 py-3 font-bold text-white shadow-lg transition hover:bg-red-500 capitalize">View Interviews</a>
                             </div>
                         </div>
                     </div>
                     <div class="card bg-base-100 shadow-lg">
                         <figure>
-                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"/>
+                            <img src="./assets/image/Documents.jpeg" alt="Shoes"/>
                         </figure>
                         <div class="card-body bg-emerald-900">
-                            <h2 class="card-title text-white">Card Title</h2>
-                            <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                            <h2 class="card-title text-white">Photographs</h2>
+                            <p class="text-white">Browse a simple gallery of historical photo placeholders with category information.</p>
                             <div class="card-actions justify-end">
-                                <a href="#" class="rounded-md bg-red-600 px-6 py-3 font-bold text-white shadow-lg transition hover:bg-red-500 capitalize">more info</a>
+                                <a href="gallery.html" class="rounded-md bg-red-600 px-6 py-3 font-bold text-white shadow-lg transition hover:bg-red-500 capitalize">View Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -129,15 +147,15 @@
             </div>
         </section>
 
-        <!--  -->
-        <section class="mb-20 container mx-auto">
-            <div class="rounded-3xl overflow-hidden relative min-h-65">
+        <!-- Contact -->
+        <section class="my-20 container mx-auto">
+            <div class="rounded-none sm:rounded-3xl overflow-hidden relative min-h-65">
                 <img class="absolute inset-0 w-full h-full object-cover" src="./assets/image/image-4.png"/>
                 <div class="absolute inset-0 bg-green-950/10"></div>
                 <div class="relative p-10 text-white max-w-2xl">
                     <h2 class="text-4xl font-extrabold">Contribute to the Archive</h2>
                     <p class="font-bold text-emerald-50/90 uppercase mt-2">You can contact the archive administrator to share information, documents, or photographs.</p>
-                    <a href="#" class="inline-block mt-5 bg-red-600 transition hover:bg-red-500 text-surface px-5 py-3 rounded-xl font-bold capitalize">more info <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="contact.html" class="inline-block mt-5 bg-red-600 transition hover:bg-red-500 text-surface px-5 py-3 rounded-xl font-bold capitalize">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
@@ -147,7 +165,7 @@
         <div class="container mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2">
                 <div class="grid justify-center sm:justify-start mb-5">
-                    <a href="#" class="text-3xl font-bold text-red-800 text-center sm:text-start">Liberation War Archive</a>
+                    <a href="#" class="text-3xl font-bold text-red-600 text-center sm:text-start">Liberation War Archive</a>
                     <p class="text-sm text-white mt-2 mb-4 text-center sm:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <ul class="flex gap-6 text-lg text-white justify-center sm:justify-start">
                         <li class=""><a href="#" class="capitalize hover:text-red-500 transition-all">Link 1</a></li>
@@ -172,7 +190,7 @@
                     <form action="">
                         <input type="email" placeholder="Enter Email" class="bg-white w-full p-2.5 mb-2 outline-0">
                         <div class="">
-                            <button class="text-lg hover:text-white text-red-800 bg-white hover:bg-red-800 transition-all capitalize font-bold w-full p-2 cursor-pointer">send <i class="fa-regular fa-paper-plane"></i></button>
+                            <button class="text-lg hover:text-white text-emerald-900 bg-red-600 hover:bg-red-500 transition-all capitalize font-bold w-full p-2 cursor-pointer">send <i class="fa-regular fa-paper-plane"></i></button>
                         </div>
                     </form>
                 </div>

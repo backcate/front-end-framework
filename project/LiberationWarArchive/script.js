@@ -43,17 +43,17 @@ function liveTime() {
 liveTime();
 setInterval(liveTime, 1000);
 
-import { documents, interviews, gallery } from "./data2.js";
+import { documents, interviews, gallery } from "./data.js";
 
 const $ = (id) => document.getElementById(id);
 
 // Shared Tailwind class groups
 const CARD =
-  "group flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 shadow-lg shadow-black/40 transition hover:-translate-y-1 hover:border-amber-500/60";
+  "group flex flex-col overflow-hidden rounded-none sm:rounded-3xl bg-emerald-900 shadow-lg shadow-black/40 transition hover:border-amber-500/60";
 const BODY = "flex flex-1 flex-col gap-2 p-5";
 const TITLE = "text-xl font-bold text-white";
 const BTN =
-  "rounded-lg border border-amber-800 px-4 py-2 text-sm font-semibold text-amber-300 transition hover:bg-amber-800 hover:text-white";
+  "rounded-lg px-4 py-2 text-sm font-semibold text-white bg-red-600 transition hover:bg-red-500";
 const BTN_FILL =
   "rounded-lg bg-amber-800 px-4 py-2 text-sm font-semibold text-white transition hover:bg-amber-900";
 const MEDIA = "mt-3 rounded-lg border border-slate-700 bg-slate-900/60 p-5";
@@ -62,7 +62,7 @@ const MEDIA = "mt-3 rounded-lg border border-slate-700 bg-slate-900/60 p-5";
 const documentCard = (doc) => `
   <article class="${CARD}">
     <div class="${BODY}">
-      <div class="self-start rounded-full bg-yellow-400/15 px-3 py-1 text-xs font-bold text-yellow-300">${doc.category}</div>
+      <div class="self-start rounded-full bg-red-400/25 px-3 py-1 text-xs font-bold text-red-600">${doc.category}</div>
       <h2 class="${TITLE}">${doc.title}</h2>
       <p class="text-sm text-slate-400"><strong class="text-slate-300">Date:</strong> ${doc.date}</p>
       <p class="text-slate-400">${doc.description}</p>
@@ -77,14 +77,15 @@ const mediaBox = (item) => {
   if (item.mediaType === "Audio") {
     return `
       <div class="${MEDIA}">
-        <p class="mb-3 font-semibold text-amber-200">Audio Interview</p>
+        <p class="mb-3 font-semibold text-red-300">Audio Interview</p>
+        <img src="${item.audioImg}" alt="cd" class="w-full">
         <audio controls class="w-full"><source src="${item.audioUrl}" type="audio/mpeg"></audio>
       </div>`;
   }
   if (item.mediaType === "Video") {
     return `
       <div class="${MEDIA}">
-        <p class="mb-3 font-semibold text-amber-200">Video Interview</p>
+        <p class="mb-3 font-semibold text-red-300">Video Interview</p>
         <div class="aspect-video">
           <iframe class="h-full w-full rounded-lg" src="${item.videoUrl}" title="${item.name} Interview" allowfullscreen></iframe>
         </div>
@@ -99,7 +100,7 @@ const mediaBox = (item) => {
 const interviewCard = (item) => `
   <article class="${CARD}">
     <div class="${BODY}">
-      <div class="self-start rounded-full bg-amber-400/15 px-3 py-1 text-xs font-bold text-amber-300">${item.role}</div>
+      <div class="self-start rounded-full bg-red-400/25 px-3 py-1 text-xs font-bold text-red-600">${item.role}</div>
       <h2 class="${TITLE}">${item.name}</h2>
       <p class="text-slate-400"><strong class="text-slate-100">Biography:</strong> ${item.biography}</p>
       <p class="text-slate-400"><strong class="text-slate-100">Interview Summary:</strong> ${item.summary}</p>
@@ -114,17 +115,17 @@ const galleryCard = (photo) => `
             </figure>
             <button type="button" class="absolute top-0 left-0 w-full h-full cursor-pointer hover:bg-gray-800/30 transition-all" onclick="zoom_${photo.id}.showModal()"></button>
             <dialog id="zoom_${photo.id}" class="modal">
-                <div class="modal-box max-w-200!">
+                <div class="relative p-0 sm:p-5 rounded-none sm:rounded-2xl max-w-full! sm:max-w-200! bg-emerald-900">
                     <form method="dialog">
-                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
+                        <button class="btn bg-transparent transition hover:bg-red-600 text-red-600 hover:text-white border-0 shadow-none rounded-full size-8 absolute right-2 top-2"><i class="fa-solid fa-xmark"></i></button>
                     </form>
                     <figure class="h-100">
                         <img class="bg-center bg-no-repeat bg-cover w-full h-full" src="${photo.image}" alt="${photo.title}"/>
                     </figure>
-                    <div class="mt-2.5">
-                        <h1 class="text-xl font-semibold">${photo.title}</h1>
-                        <p>${photo.description}</p>
-                        <button class="bg-pink-950 py-2 px-3 rounded-lg text-white mt-2.5 cursor-pointer" data-download="${photo.id}">Download <i class="fa-solid fa-download"></i></button>
+                    <div class="mt-2.5 p-5">
+                        <h1 class="text-xl font-semibold text-white">${photo.title}</h1>
+                        <p class="text-white text-sm">${photo.description}</p>
+                        <button class="bg-red-600 transition hover:bg-red-500 py-2 px-3 rounded-lg text-white mt-2.5 cursor-pointer" data-download="${photo.id}">Download <i class="fa-solid fa-download"></i></button>
                     </div>
                 </div>
             </dialog>
@@ -231,19 +232,19 @@ function setupContactForm() {
     if (!name || !email || !subject || !message) {
       return showMessage(
         "Please fill in all required fields.",
-        "text-yellow-600",
+        "text-red-600",
       );
     }
     if (!email.includes("@")) {
       return showMessage(
         "Please enter a valid email address.",
-        "text-yellow-600",
+        "text-red-600",
       );
     }
 
     showMessage(
       "Your message has been submitted successfully.",
-      "text-amber-400",
+      "text-emerald-500",
     );
     form.reset();
   });
